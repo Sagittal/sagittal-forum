@@ -1,0 +1,19 @@
+{
+  "name": "@sagittal/sagittal-forum",
+  "version": "1.0.0",
+  "description": "helpers and materials related to the Sagittal forum\n\n",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sagittal/staff-code.git"
+  },
+  "scripts": {
+    "deploy": "sh bin/deploy.sh"
+  },
+  "devDependencies": {
+    "ssh2": "^0.8.9"
+  },
+  "engines": {
+    "node": ">=14"
+  }
+}
