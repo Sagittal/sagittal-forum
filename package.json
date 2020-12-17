@@ -11,7 +11,8 @@
     "deploy": "sh bin/deploy.sh"
   },
   "devDependencies": {
-    "ssh2": "^0.8.9"
+    "ssh2": "^0.8.9",
+    "ts-node": "^9.1.1"
   },
   "engines": {
     "node": ">=14"
