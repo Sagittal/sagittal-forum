@@ -1,5 +1,4 @@
 const fs = require("fs")
-const {deepEquals} = require("@sagittal/general")
 const {Client} = require("ssh2")
 const secrets = require("../.secrets.json")
 
@@ -9,9 +8,9 @@ const tmpFile = "/tmp/staffCode.js"
 
 const compareFiles = () => {
     const tmpCopiedFromRemote = fs.readFileSync("/tmp/staffCode.js")
-    const previouslyCompiled = fs.readFileSync("dist/forum/bbCode/staffCode.js")
+    const previouslyCompiled = fs.readFileSync("dist/staffCode.js")
 
-    if (!deepEquals(tmpCopiedFromRemote, previouslyCompiled)) {
+    if (tmpCopiedFromRemote !== previouslyCompiled) {
         throw new Error("The Sagittal Forum's staffCode.js file has diverged from the most recent previously compiled version. Please review /tmp/staffCode.js, a just-nabbed local backup of the Forum's current version, before proceeding.")
     } else {
         console.warn("\n\nThe Sagittal Forum's staffCode.js file matches the most recent previously compiled version. We are go for launch.\n\n")

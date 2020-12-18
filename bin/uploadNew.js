@@ -3,7 +3,7 @@ const secrets = require("../.secrets.json")
 
 const sshOpt = {...secrets, port: 26, host: "dkeenan.com"}
 const remoteFile = "public_html/sagittal/forum/assets/javascript/staffCode.js"
-const localFile = "./dist/forum/bbCode/staffCode.js"
+const localFile = "./dist/staffCode.js"
 
 const conn = new Client()
 conn.on("ready", () => {

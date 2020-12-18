@@ -8,7 +8,7 @@
     "url": "git+https://github.com/Sagittal/staff-code.git"
   },
   "scripts": {
-    "deploy": "sh bin/deploy.sh"
+    "update-staff-code": "sh bin/update_staff_code.sh"
   },
   "devDependencies": {
     "ssh2": "^0.8.9",
