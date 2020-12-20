@@ -11,6 +11,7 @@ const compareFiles = () => {
     const previouslyCompiled = fs.readFileSync("dist/staffCode.js")
 
     if (tmpCopiedFromRemote !== previouslyCompiled) {
+        // TODO: need a -f (force) or something...
         throw new Error("The Sagittal Forum's staffCode.js file has diverged from the most recent previously compiled version. Please review /tmp/staffCode.js, a just-nabbed local backup of the Forum's current version, before proceeding.")
     } else {
         console.warn("\n\nThe Sagittal Forum's staffCode.js file matches the most recent previously compiled version. We are go for launch.\n\n")
