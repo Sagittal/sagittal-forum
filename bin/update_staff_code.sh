@@ -8,6 +8,7 @@ BROWSER_DOWNLOAD_URL=$(curl  \
 )
 echo "$BROWSER_DOWNLOAD_URL"
 
+rm dist/StaffCodeBBCode.zip || true # If you don't, wget suffixes downloads .1, .2, etc. so nothing updates
 wget -P dist "$BROWSER_DOWNLOAD_URL"
 7z e dist/StaffCodeBBCode.zip -odist -y
 
