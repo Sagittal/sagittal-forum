@@ -12,5 +12,5 @@ rm dist/StaffCodeBBCode.zip || true # If you don't, wget suffixes downloads .1, 
 wget -P dist "$BROWSER_DOWNLOAD_URL"
 7z e dist/StaffCodeBBCode.zip -odist -y
 
-node bin/checkExisting.js
+# node bin/checkExisting.js
 node bin/uploadNew.js
