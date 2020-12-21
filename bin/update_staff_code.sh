@@ -8,9 +8,8 @@ BROWSER_DOWNLOAD_URL=$(curl  \
 )
 echo "$BROWSER_DOWNLOAD_URL"
 
-rm dist/StaffCodeBBCode.tar.gz || true
 wget -P dist "$BROWSER_DOWNLOAD_URL"
-tar -xvzf dist/StaffCodeBBCode.tar.gz -C dist
+7z e dist/StaffCodeBBCode.zip -odist -y
 
 node bin/checkExisting.js
 node bin/uploadNew.js
