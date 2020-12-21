@@ -11,6 +11,7 @@
     "update-staff-code": "sh bin/update_staff_code.sh"
   },
   "devDependencies": {
+    "@sagittal/general": "^1.0.57",
     "ssh2": "^0.8.9",
     "ts-node": "^9.1.1"
   },
