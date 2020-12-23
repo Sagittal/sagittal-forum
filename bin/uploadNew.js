@@ -17,6 +17,7 @@ conn.on("ready", () => {
                 if (err) throw err
                 conn.end()
 
+                // TODO: it might be cool if you get this to announce which version of staff code it got updated to
                 console.warn("\n\nThe Sagittal Forum has had its staffCode.js updated!\n\n")
             },
         )
