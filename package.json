@@ -8,12 +8,16 @@
     "url": "git+https://github.com/Sagittal/staff-code.git"
   },
   "scripts": {
-    "update-staff-code": "sh bin/update_staff_code.sh"
+    "update-staff-code": "node -r ts-node/register/transpile-only --max-old-space-size=131072 src/scripts/updateStaffCode.ts"
   },
   "devDependencies": {
-    "@sagittal/general": "^1.0.71",
+    "@sagittal/general": "^1.0.72",
+    "@types/node": "^14.14.16",
+    "@types/ssh2": "^0.5.46",
     "ssh2": "^0.8.9",
-    "ts-node": "^9.1.1"
+    "ts-node": "^9.1.1",
+    "tslint": "^6.1.3",
+    "typescript": "^4.1.3"
   },
   "engines": {
     "node": ">=14"
