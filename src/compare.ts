@@ -7,6 +7,7 @@ const compareFiles = (forceUpdate: boolean): void => {
 
     if (tmpCopiedFromRemote !== previouslyCompiled) {
         if (forceUpdate) {
+            // todo: i think you always have to force which sux
             saveLog("The Sagittal Forum's staffCode.js file has diverged from the most recent previously compiled version. But the --force flag has been provided, so we're overwriting it, whatever it is!")
         } else {
             throw new Error("The Sagittal Forum's staffCode.js file has diverged from the most recent previously compiled version. Please review /tmp/staffCode.js, a just-nabbed local backup of the Forum's current version, before proceeding.")
