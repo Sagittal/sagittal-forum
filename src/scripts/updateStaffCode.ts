@@ -5,7 +5,7 @@ import secrets from "../../.secrets.json"
 import {ssh2} from "../globals"
 import {updateStaffCode} from "../updateStaffCode"
 
-const SSH_OPT = {...secrets, port: 26, host: "dkeenan.com"}
+const SSH_OPT = {...secrets, port: 26, host: "103.16.128.204"}
 
 cp.execSync("sh bin/update_staff_code.sh")
 

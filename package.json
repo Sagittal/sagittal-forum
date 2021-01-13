@@ -5,7 +5,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Sagittal/staff-code.git"
+    "url": "git+https://github.com/Sagittal/scripts-forum.git"
   },
   "scripts": {
     "update-staff-code": "node -r ts-node/register/transpile-only --max-old-space-size=131072 src/scripts/updateStaffCode.ts"
