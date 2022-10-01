@@ -1,5 +1,5 @@
 const FILE = "staffCode.js"
-const REMOTE_FILE = `public_html/sagittal/forum/assets/javascript/${FILE}`
+const REMOTE_FILE = `domains/forum.sagittal.org/public_html/assets/javascript/${FILE}`
 const LOCAL_FILE = `./dist/${FILE}`
 
 const TMP_VERSION_FILE = "./tmp/staffCodeVersion.txt"

@@ -5,8 +5,7 @@ import secrets from "../../.secrets.json"
 import {ssh2} from "../globals"
 import {updateStaffCode} from "../updateStaffCode"
 
-const SSH_OPT = {...secrets, port: 26, host: "103.16.128.204"}
-
+const SSH_OPT = {...secrets, port: 22, host: "103.1.186.221"}
 cp.execSync("sh bin/update_staff_code.sh")
 
 const conn: Client = new Client()
