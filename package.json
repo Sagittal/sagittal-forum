@@ -11,8 +11,8 @@
     "update-staff-code": "node -r ts-node/register/transpile-only --max-old-space-size=131072 src/scripts/updateStaffCode.ts"
   },
   "devDependencies": {
-    "@sagittal/general": "^1.0.119",
-    "@types/node": "^18.7.23",
+    "@sagittal/general": "^1.0.120",
+    "@types/node": "^18.8.0",
     "@types/ssh2": "^1.11.6",
     "ssh2": "^1.11.0",
     "ts-node": "^10.9.1",
