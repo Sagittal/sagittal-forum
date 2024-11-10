@@ -1,7 +1,5 @@
-import {Client} from "ssh2"
+import { Client } from "ssh2"
 
-const ssh2: {conn: Client} = {} as {conn: Client}
+const ssh2: { conn: Client } = {} as { conn: Client }
 
-export {
-    ssh2,
-}
+export { ssh2 }

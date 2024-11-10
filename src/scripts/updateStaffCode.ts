@@ -1,11 +1,11 @@
 import cp from "child_process"
-import {Client} from "ssh2"
+import { Client, ConnectConfig } from "ssh2"
 // @ts-ignore
 import secrets from "../../.secrets.json"
-import {ssh2} from "../globals"
-import {updateStaffCode} from "../updateStaffCode"
+import { ssh2 } from "../globals"
+import { updateStaffCode } from "../updateStaffCode"
 
-const SSH_OPT = {...secrets, port: 22, host: "103.1.186.221"}
+const SSH_OPT = { ...secrets, port: 22, host: "103.1.186.221" } as ConnectConfig
 cp.execSync("sh bin/update_staff_code.sh")
 
 const conn: Client = new Client()
