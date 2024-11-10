@@ -1,5 +1,5 @@
 import * as fs from "fs"
-import { Maybe, saveLog } from "@sagittal/general"
+import { Maybe, saveLog, stringify } from "@sagittal/general"
 import { SFTPWrapper } from "ssh2"
 import { LOCAL_FILE, REMOTE_FILE, TMP_VERSION_FILE } from "./constants"
 import { ssh2 } from "./globals"
@@ -13,7 +13,7 @@ const updateStaffCode = (): void => {
             ssh2.conn.end()
 
             saveLog(
-                `\n\nThe Sagittal Forum has had its staffCode.js updated to version ${fs.readFileSync(TMP_VERSION_FILE).toString()}.\n\n`,
+                `\n\nThe Sagittal Forum has had its staffCode.js updated to version ${stringify(fs.readFileSync(TMP_VERSION_FILE))}.\n\n`,
             )
         })
     })
